@@ -5,7 +5,26 @@ border: 0cqmax;
 }
 
 h1{ 
-     
+     h1
+          {
+           text-decoration:underline;           
+           text-align: center;
+           font-size:xx-large;
+           font-weight:larger;
+           font-style:italic;
+           font-family: 'Times New Roman', Times, serif;
+           color: aqua;
+          }
+        p
+          {
+            text-decoration:underline;           
+           text-align: center;
+           font-size:xx-large;
+           font-weight:larger;
+           font-style:italic;
+           font-family: 'Times New Roman', Times, serif;
+           
+          }
      text-decoration:underline;           
      text-align: center;
      font-size:xx-large;
@@ -25,5 +44,134 @@ h1{
      
     }
 
+     /*02/032025*/
+
+    .enfatizar{color: rgb(255, 217, 0);}
+    .italico{font-style: italic; 
+      color:aliceblue;
+      text-align: center; 
+      font-size: xxx-large;
+    }
+    body {background: url(enge.dados01.jfif);background-size: cover;background-repeat: no-repeat;}
+
+
+    /*03/04/2025*/
+
+    .caixa1 {
+background-color: rgb(17, 18, 18);/* cor clara visualização*/
+margin: 10px;/* criar espaçamento de 20px em todos os lados*/
+padding: 50px;   
+            }
+    .caixa2{
+background-color: blueviolet;
+margin-top: 50px;
+margin-right: 51px;
+margin-bottom: 15px;
+margin-left: 50px;
+padding: 50px;
+
+           }
+
+         /*EXEMPLO DE DISPLAY*/
+         
+  .exibicao-block{
+    display: block;
+    background-color: blue;
+    margin-bottom: 100; 
+                }
+
+  .exibicao-inline{
+    display: inline;
+    background-color: blue;
+    margin-bottom: 100;               
+                  }
+
+    .exibicao-block-inline{
+    display: inline;
+    background-color: red;
+    margin-bottom: 100; 
+                           }
+
+  /* EXEMPLOS DE OVERFLOW */
+  
+  .overflow-visible{
+    
+    width: 200px;
+    height: 60px;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    overflow: visible;
+
+  }
+ .overflow-hidden{
+
+    width: 200px;
+    height: 60px;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    overflow: hindder;
+ }
+
+ .overflow-scroll{ 
+
+    width: 200px;
+    height: 60px;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    overflow: scroll;
+ }
+
+ /*04/04/2025 RODA PÉ*/
+
+ .footer{
+  position: fixed; /*ralative*/
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: blue;
+  color: aliceblue;
+  text-align: center;
+  padding: 5px;
+}
+ 
+.container
+{
+  display: flex;
+  flex-direction: column;
+  text-align: capitalize;
+  min-height: 100vh;
+}
+
+.pricipal
+{
+  flex: 1;
+  background: maroon;
+}
+.rodape
+{
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  color: beige;
+  padding: 15xp;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+
+.container
+{
+  flex: 1;
+  background: maroon;
+}
+  
+
+
+
+ 
+ 
+
+                                 
+  
 
 
