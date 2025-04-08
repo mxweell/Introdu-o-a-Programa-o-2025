@@ -133,6 +133,17 @@ padding: 50px;
   text-align: center;
   padding: 5px;
 }
+.rodape
+ {position: fixed; /*ralative*/
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: blue;
+  color: aliceblue;
+  text-align: center;
+  padding: 5px;
+}
+
  
 .container
 {
@@ -147,17 +158,6 @@ padding: 50px;
   flex: 1;
   background: maroon;
 }
-.rodape
-{
-  background-color: black;
-  bottom: 0;
-  left: 0;
-  color: beige;
-  padding: 15xp;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-}
 
 .container
 {
@@ -165,6 +165,66 @@ padding: 50px;
   background: maroon;
 }
   
+
+/* 07/04/2025 Estrutura de Cabecalho*/
+
+.style
+
+.corpo{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo
+{
+background-color: rgb(191, 191, 218);
+padding: 10px 0;
+}
+
+.Menu 
+{
+    display: flex;
+    justify-content: center
+}
+.Menu a
+{
+    color: rgb(30, 83, 5);
+    padding: 14px 05%;
+    transition: backgrond 0.5s;
+
+}
+
+.Menu a:hover
+    {
+        background-color: rgb(75, 141, 75);
+    }  
+
+style
+
+
+/* HTML */
+
+head
+body
+    header>
+        nav>
+            a href="#" >Inicio</a>
+            <a href="#" >Sobre</a>
+            <a href="#" >Serviço</a>
+            <a href="#" >Contato</a>
+        </nav>
+    </header>
+
+<div>
+
+    <main>
+        <h1>Bem-Vindo ao meu Site</h1>
+        <p>Este é um exemplo de cabeçalho</p>
+    </main>
+</div>
+
+</body>
+</html>
 
 
 
