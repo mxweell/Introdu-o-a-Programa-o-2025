@@ -1,0 +1,33 @@
+.corpo
+        {
+            margin: 0px;
+           
+        }
+        
+        .Menu 
+        {
+            width: 200px;
+            background-color: blue;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+        }
+        .Menu a
+        {
+           display: block;
+           color: wheat;
+           padding: 14px 20px;
+           text-decoration: nome;
+           border-bottom: 1px solid cornsilk;
+        }
+
+        .Menu a:hover
+            {
+                background-color: aqua;
+            }
+        main{ 
+            margin-left: 220px;
+            padding: 20px;
+        }
