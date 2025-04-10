@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <link rel="stylesheet" href="Styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercicio9</title>
-
-</head>
-<body>
-    <style>
-        .caixa1 {
+.caixa1 {
         
     background-color: aqua;/* cor clara visualização*/
     margin: 50px;/* criar espaçamento de 20px em todos os lados*/
@@ -54,43 +43,3 @@
     margin-bottom: 10px;
     overflow: scroll;
 }
-
-</style>
-
-    <h1>Exemplo de Margin</h1>
-
- <div class="caixa1">
-    <a href="Exercicio4.html"> Esta DIV tem margin: 20px em todos.</a>
- </div>
-
- <br>
-
- <div class="caixa2"> 
-    Esta DIV tem margin diferenciada em cada lado.
- </div>
-
- <div class="caixa3">
-    <p>CSS é a sigla para Cascading Style Sheets, que significa Folha de Estilo em Cascata.</p> 
-    <p>É uma linguagem de programação que define a aparência visual de páginas web.</p>
- </div>
-
- 
-
-
-
- <footer>&copy;WeellMax</footer>
-    
-</body>
-</html>
-
-<div class="content">
-    <main>
-        <div> 
-            <h1> Aqui é h1</h1>
-            <p> Aqui é o P</p>
-
-        </div>
-    </main>
-
-
-</div>

@@ -1,0 +1,31 @@
+
+/* MENU CABECALHO */
+
+.corpo
+{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo
+{
+    background-color: rgb(191, 191, 218);
+}
+
+.Menu 
+{
+    display: flex;
+    justify-content: center
+}
+.Menu a
+{
+    color: rgb(30, 83, 5);
+    padding: 20px 10%;
+    transition: backgrond 0.5s;
+
+}
+
+.Menu a:hover
+    {
+        background-color: rgb(75, 141, 75);
+    }  
