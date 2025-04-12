@@ -109,3 +109,125 @@ header nav ul li a:hover
     margin: 0 auto 20px auto;
     line-height: 1.5;
 }
+
+/* Sessão de Serviços*/
+
+#Serviços
+{
+background-color: bisque;
+text-align: center;
+padding: 50px;
+}
+.cards
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.card
+{
+    background-color: orangered;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 9px 8px black;
+    cursor: pointer;
+    transition: transfrom 0.5s;
+    margin-top: 20px;
+}
+
+.card:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px black;
+    background-color: orangered;
+}
+
+.Card h3
+{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.card p
+{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.Preço
+{
+    font-weight: bold;
+    font-size: 19px;
+
+}
+
+#serviços h2
+{
+    font-size: 30px;
+}
+
+/* Seção Contato */
+
+#Contatos
+{
+    background-color: black;
+    color: beige;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#Contatos h2
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.Contatos-form
+{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.Contatos-form label
+{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.Contatos-form input,.Contatos-form textarea
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.Contatos-form button
+{
+    background-color: orangered;
+    color: azure;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Contatos-form button:hover
+{
+    background-color: orangered;
+}
+
+footer{
+    position: fixed; /*ralative*/
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: blue;
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
+  }
