@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> "identeificar o tipo triangulo"</h1>
+<script>
+    let lado1 = parseInt(prompt ( 'Digite o valos do primedo'))
+    let lado2 = parseInt(prompt( "Digite valor do segundo lado do triangulo"))
+    let lado3 = parseInt(prompt( 'Digite valor do terceiro lado do triangulo '))
+ 
+switch(true){
+
+    case (lado1 === lado2 && lado3 === lado3):  
+        console.log ('Equilatero')
+        break;
+
+    case ( lado1 == lado2 || lado2 != lado3):
+        console.log ('Isosceles')
+        break;
+
+    case (lado1 != lado2 && lado2 != lado3 ):
+        console.log ("Escaleno")
+    break;
+    default:
+
+    console.log ( 'Não e um Triangua')                                         
+
+ }
+</script>
+
+</body>
+</html>

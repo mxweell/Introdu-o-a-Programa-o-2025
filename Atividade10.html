@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Classificação de temoeratura</h1>
+
+    <script>
+
+let temperatura = parseInt( prompt("digite a temperatura"))
+        switch(true){
+
+            case (temperatura< 15):
+            console.log ('Frio')
+            break;
+            
+            case ( temperatura >= 15 && temperatura <= 25):
+            console.log ( "Amena")
+            break;
+
+            case ( temperatura > 25):
+            console.log ("Quente")
+            break;
+            
+            default:
+                console.log (" Temperatura invalida")
+            
+        }
+
+
+    </script>
+
+</body>
+</html>
