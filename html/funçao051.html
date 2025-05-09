@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1> verifique o horario conrmercial</h1>
+
+        <script>
+              
+              let horaAtual = parseInt(prompt(' DIgite o horario atual'))
+
+        function verificarStatusLoja(horaAtual) {
+            if (horaAtual >= 8 && horaAtual <= 18) 
+            return "A loja está aberta!";
+            else 
+            return "A loja está fechada.";
+            }
+
+
+        alert (verificarStatusLoja (horaAtual))
+        console.log(verificarStatusLoja (horaAtual))
+
+        </script>
+
+
+
+</body>
+</html>
