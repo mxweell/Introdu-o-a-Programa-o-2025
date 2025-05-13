@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id=" quantidadeDeCarrinho"> Quantidade de de itemno carrinhio</p>
+    <button onclick="adicionarItem()"> + </button>
+
+
+
+<script>
+    let quantidade = 0;
+
+        function adicionarItem(){
+        quantidade += 1
+       let carrinhio = document.getElementById(" quantidadeDeCarrinho");
+       carrinhio.textContent = " Quantidades de itens" + quantidade
+        }
+
+</script>
+
+<button onclick= "dimuirItem ()">-</button>
+
+<script>
+let nemos = 0
+function dimuirItem (){
+    if(quantidade > 0){
+    let carrinhio = document.getElementById(" quantidadeDeCarrinho");
+       carrinhio.textContent = " Quantidades de itens" + quantidade
+    }       
+}
+</script>
+
+<button onclick="apagar() ">Resere</button>
+
+<script>
+let reset = 0;
+function apagar(){
+    quantidade = 0
+    let carrinhio = document.getElementById(" quantidadeDeCarrinho");
+       carrinhio.textContent = " Quantidades de itens" + quantidade
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
