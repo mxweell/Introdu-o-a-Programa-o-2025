@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
 </head>
 <body>
     
-        <p id="vouMexer"> Mudar tamanho da fonte</p>
-
-        <button onclick="aumentarLetra">+</button>
-        
-        <button onclick="diminuirLetra">-</button>
+     <p id="vouMexer"> Mudar tamanho da fonte</p>
+     <button onclick="aumentarLetra()">+</button>
+     <button onclick="diminuirLetra()">-</button>
 
         <script>
             let tempoReal= document.getElementById("vouMexer")
-            let tamanhoatual= 15;
+            let tamanhoAtual= 16;
 
             function aumentarLetra(){
-                tamanhoReal.style.fontsize = tamanhoAtual ++ + "px"
+                tempoReal.style.fontSize = tamanhoAtual++ + "px"
             }
             function diminuirLetra(){
-                tamanhoReal.style.fontsize = tamanhoAtual -- + "pix"
+                tempoReal.style.fontSize = tamanhoAtual-- + "px"
             }
 
         </script>
