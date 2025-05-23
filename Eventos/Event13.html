@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>carregando</title> 
+    
+    
+    <style>
+      
+        #carregar {
+            width: 100px;
+            height: 50px; 
+            position: absolute;
+            left: 0;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <h1>carregando...</h1>
+    <div id= 'carregar'></div>
+        
+    
+    <script>
+        let complemento = 0
+        let carregar = document.getElementById('carregar')
+        let garregando = setInterval(function(){
+            complemento+= 1;
+            carregar.style.width = complemento + '%'
+            carregar.style.backgroundColor = 'blue'
+
+            if (complemento >= 100){
+                clearInterval(garregando)
+               
+            }
+    
+        },100)
+        
+    </script>
+          
+</body>
+</html>

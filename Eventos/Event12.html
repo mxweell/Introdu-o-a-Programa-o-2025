@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <h1>Tempo pra Largada</h1>
+    <input type="text" id="tempoLargada" placeholder="Digite o tempo">
+    <button id="inicia">Iniciar Timer</button>
+    <h2> Tempo restante: <span id = "contador"></span>  Segundos</h2>
+
+    <script>
+        document.getElementById("inicia").addEventListener("click", function(){
+        let tempo = document.getElementById("tempoLargada").value
+        let contador = document.getElementById("contador")
+        let timer = setInterval(function(){
+            if(tempo > 0){
+                contador.innerHTML = tempo
+                tempo--
+            }else{
+                clearInterval(timer)
+                contador.innerHTML = "Largada!"
+            }
+        }, 1000)
+        })
+    </script>
+</body>
+</html>
