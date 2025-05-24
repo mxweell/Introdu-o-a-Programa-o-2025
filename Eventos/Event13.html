@@ -7,12 +7,21 @@
     
     
     <style>
-      
-        #carregar {
-            width: 100px;
-            height: 50px; 
+
+        #carregar  {
+            width: 0;
+            height: 30%; 
+            background-color: blue;
             position: absolute;
             left: 0;
+        }
+      
+        #barra {
+            width: 0%;
+            height: 100%; 
+            position: absolute;
+            left: 0;
+            background-color: black;
         }
     </style>
 
@@ -21,19 +30,23 @@
 <body>
 
     <h1>carregando...</h1>
-    <div id= 'carregar'></div>
+    <div id= 'carregar'>
+        <div id="barra">
+
+        </div>
+    </div>
         
     
     <script>
-        let complemento = 0
-        let carregar = document.getElementById('carregar')
-        let garregando = setInterval(function(){
-            complemento+= 1;
-            carregar.style.width = complemento + '%'
-            carregar.style.backgroundColor = 'blue'
-
-            if (complemento >= 100){
-                clearInterval(garregando)
+        let largura= 0
+        let barra= document.getElementById('barra');
+       
+        let intervalo= setInterval(function(){
+            complemento += 1;
+            barra.style.width = complemento + '%';
+            
+            if (largura >= 100){
+                clearInterval(intervalo);
                
             }
     

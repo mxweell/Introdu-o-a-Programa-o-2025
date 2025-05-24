@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVER QUADRADO</title>
+
+
+<style>
+        #quadrado{
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        h1{
+            color: blue;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <H1>MOVER QUADRADO</H1>
+
+   <div id="quadrado"></div>
+   
+   <script>
+        
+        let posicao = 0;
+        let quadrado = document.getElementById("quadrado");
+        let intervalo = setTimeout( function(){
+            posicao += 200;
+            quadrado.style.left = posicao + "px";
+           
+            if(posicao >= 500){
+                clearInterval(intervalo);
+               
+            }
+        
+        },1000)
+    </script>''
+</body>
+</html>
