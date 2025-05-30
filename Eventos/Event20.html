@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o numero</title>
+
+    <style>
+           body{
+        
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #111d3f;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+            margin: 0;  
+           } 
+           
+           .gamecontainer{
+            background-color: rgb(38, 95, 15);
+            width: 400px;
+            height: 300px;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+        }
+
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+            color: #f1f3ee;
+            margin: 20px 0;
+        }
+       p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            color: #e4eaeb;
+            margin: 20px 0;
+        }
+
+        input[type="number"] {
+            width: 200px;
+            height: 20px;
+            border-radius: 10px;
+            border: none;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            background-color: #111111;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="gameContainer">
+        
+        <h1>Jogo do Adivinha o numero!</h1>
+        <p>Digite um numero entre 1 e 100</p>
+        <input type="number" min="1" max ="100">
+        
+        <button>Arriscar!</button>
+    
+    </div>
+
+    <script>
+
+        let numeroSecreto
+
+        console.log(Math. random())
+        function iniciarJogo(){
+        numeroSecreto = Math.floor(Math.random() * 100)
+        }
+    </script>
+
+
+    
+</body>
+</html>

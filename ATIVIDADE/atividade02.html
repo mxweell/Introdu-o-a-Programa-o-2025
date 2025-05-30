@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Classificação de idade</title>
 </head>
 <body>
-    <h1> Atividade Aplicação de Programação</h1>
+    
+    <h1> Classificação de idade</h1>
+
+        <input type="text" id="idade" placeholder="Digite sua idade">
+        <button id="btn">Verificar</button>
+        <p id="resultado"></p>
+  
     <script>
-    let idade = parseInt ( prompt( ' digite sua idade'));    
-    if (idade >= 18 && idade <= 70){
-         console.log ('VOTO PERMITIDO');
-    }else if (( idade >= 16 && idade< 18) || idade > 70){
-        console.log ( 'VOTO FACULTATIVO')
-    }else{
-        console.log('Voto Não Obrigratorio');
+
+    document.getElementById("btn").addEventListener("click",()=>{;
+       
+        let idade = parseInt ( prompt( ' digite sua idade'));    
+        
+            if (idade >= 18 && idade <= 70){
+                document.getElementById("resultado").innerHTML= 'VOTO PERMITIDO';
+    
+            }else if (( idade >= 16 && idade< 18) || idade > 70){
+                document.getElementById("resultado").innerHTML=  'VOTO FACULTATIVO'
+    
+            }else{
+                document.getElementById("resultado").innerHTML='VOTO NÃO OBRIGATÓRIO';
     }
-        </script>  
+})
+    </script> 
+        
+        
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Final</title>
+
+
+
+</head>
+<body>
+    
+    <h1>Finalização de logica com JavaScript!</h1>
+
+    <header class="topo">
+        <nav class="Menu">
+            <button><a"Exercicio3.html" >Idade</a></button>
+            <button onclick = "setInterval()" ><a"Exercicio6.html" >Contador</a></button>
+            <button><a"Exercicio10.html" >tabuada</a></button>
+        </nav>
+    </header>
+
+ 
+
+      <h2> Classificação de idade</h2>
+
+        <input type="text" id="idade" placeholder="Digite sua idade">
+        <button id="btn">Verificar</button>
+        <p id="resultado"></p>
+  
+    <script>
+
+document.getElementById("btn").addEventListener("click", () => {
+    let idade = parseInt(document.getElementById("idade").value);
+
+    if (idade >= 18 && idade <= 70) {
+        document.getElementById("resultado").innerHTML = 'VOTO PERMITIDO';
+    } else if ((idade >= 16 && idade < 18) || idade > 70) {
+        document.getElementById("resultado").innerHTML = 'VOTO FACULTATIVO';
+    } else {
+        document.getElementById("resultado").innerHTML = 'VOTO NÃO OBRIGATÓRIO';
+    }
+});
+    </script>
+
+    <h1>contador: <span id="contador"></span> </h1>
+    
+    <script>
+        let contador = 10;
+
+        let intervalo = setInterval(() =>{
+            document.getElementById('contador').textContent = contador
+            contador--;
+            if (contador < 0){
+            clearInterval(intervalo)
+                
+        }},1000);
+
+    </script>
+
+
+
+
+
+</body>
+</html>

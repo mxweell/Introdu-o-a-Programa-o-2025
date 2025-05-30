@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Digitação</title>
+   <link rel="stylesheet" href="Evet19.css"> 
+   
+   <style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #8ebfec;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        flex-direction: column;
+        color: #333;
+
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #000;
+    }
+
+#texto {
+    width: 500px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    }   
+
+/* Removed unnecessary .h1 class as h1 is already styled above */
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+
+    
+   textarea{
+        width: 300px;
+        padding: px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+textarea[type="text"]:focus {
+    width: 100px;
+    padding: 100px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #28a745;
+    margin-top: 10px;
+    box-shadow: 0,2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+
+   </style>
+
+</head>
+<body>
+
+    <h1>Jogo de Digitação</h1>
+    <p>Digite mais rápido o possível</p>
+    <p id="texto"> JavaScript (JS) é uma linguagem de programação de script, amplamente utilizada para criar interação em páginas web e também para desenvolvimento de aplicativos e servidores. É conhecida por sua versatilidade, permitindo adicionar funcionalidades dinâmicas, como atualização de conteúdo, mapas interativos e gráficos 2D/3D.</p>
+    <textarea id="campoTexto" rows="4" cols="50"></textarea>
+    <p>Tempo: <span id="contador">0</span> segundos</p>
+    <p id="resultado"></p>
+    <button id="reiniciar">Reiniciar</button>
+
+    <script>
+        let textoriginal = document.getElementById("texto").innerText;
+        let campoTexto = document.getElementById("campoTexto"); // Corrigido o id
+        let resultado = document.getElementById("resultado");
+        let contador = document.getElementById("contador");
+        let reiniciarButton = document.getElementById("reiniciar");
+
+        let tempoIniciado = false;
+        let tempo = 0;
+        let intervalid;
+
+        function iniciarTempo() {
+            tempoIniciado = true;
+            intervalid = setInterval(function() {
+                tempo++;
+                contador.textContent = tempo;
+            }, 1000);
+        }
+
+        function reiniciar() {
+            clearInterval(intervalid);
+            tempo = 0;
+            contador.textContent = tempo;
+            campoTexto.value = "";
+            campoTexto.disabled = false;
+            resultado.textContent = "";
+            tempoIniciado = false;
+        }
+
+        campoTexto.addEventListener("input", function () {
+            if (!tempoIniciado) {
+                iniciarTempo();
+            }
+
+            if (campoTexto.value === textoriginal) {
+                clearInterval(intervalid);
+                resultado.textContent = "Parabéns! Você digitou corretamente.";
+                campoTexto.disabled = true;
+            }
+        });
+
+        reiniciarButton.addEventListener("click", reiniciar);
+    </script>
+
+</body>
+</html>
