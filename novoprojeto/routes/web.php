@@ -6,6 +6,9 @@ use App\Http\Controllers\Exercicio02Controller;
 use App\Http\Controllers\exercicio03controller;
 use App\Http\Controllers\exercicio04controller;
 use App\Http\Controllers\associativocontroller;
+use App\Http\Controllers\contagemController;
+use App\Http\Controllers\contagem2Controller;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,4 +26,12 @@ Route::get('/exercicio04', [exercicio04controller::class, 'tarefa04']);
 Route::get('/associativo',[associativocontroller::class, 'TrazerDados']);
 
 Route::get('/exercicio04', [exercicio04controller::class, 'tarefa04']);
+
+
+Route::get('/contagemController', [contagemController::class, 'contagem']);
+
+route::get('/contagem2', [contagem2controller::class, 'contagem2']);
+
+Route::get('/contagemController', [contagemController::class, 'contagem']);
+
 
