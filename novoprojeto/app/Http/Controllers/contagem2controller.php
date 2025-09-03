@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 class contagem2controller extends Controller
 {
     public function contagem2(){
-        $produto = ['ProdutoA', 'Produto2', 'Produto3', 'Produto4', 'Produto5', 'Produto6'];
+        $Produtos = ['ProdutoA', 'ProdutoB', 'ProdutoC', 'ProdutoD', 'ProdutoE', 'ProdutoF'];
         $quantidade = 0;
-        foreach($itens as $item){
+        foreach($Produtos as $Produto){
             $quantidade++;   
     }
-    return view ('contagem2', compact('quantidade','produto'));
+    return view ('contagem2', compact('quantidade'));
 }
 }

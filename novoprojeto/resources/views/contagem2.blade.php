@@ -8,16 +8,7 @@
 <body>
     
     <h1>Quantidade de itens: {{ $quantidade }}</h1>
-    <ul>
-        @foreach ($produtos as $produto)
-            <li>
-                {{ $produto }}
-                @if ($produto == 'produtoB')
-                    <strong> - Produto em destaque</strong>
-                @endif
-            </li>
-        @endforeach
-    </ul> 
+    
 
 </body>
 </html>

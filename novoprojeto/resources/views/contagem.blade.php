@@ -9,6 +9,17 @@
     
     <p> A quantidade de navios é:{{ $quantidade  }}</p>
 
+    <ul>
+        @foreach ($produtos as $produto)
+            <li>
+                {{ $produto }}
+                @if ($produto == 'produtoB')
+                    <strong> - produto em destaque</strong>
+                @endif
+            </li>
+        @endforeach
+    </ul> 
+
    
 </body>
 </html>
