@@ -9,6 +9,8 @@ use App\Http\Controllers\associativocontroller;
 use App\Http\Controllers\contagemController;
 use App\Http\Controllers\contagem2Controller;
 
+use App\Http\Controllers\ProdutosController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -33,5 +35,8 @@ Route::get('/contagemController', [contagemController::class, 'contagem']);
 route::get('/contagem2', [contagem2controller::class, 'contagem2']);
 
 Route::get('/contagemController', [contagemController::class, 'contagem']);
+
+Route::get('/produtos/novo',[ProdutosController::class, 'criar'])->nome('produtos.criar');
+
 
 
