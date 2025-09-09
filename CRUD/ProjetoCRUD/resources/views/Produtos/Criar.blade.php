@@ -10,20 +10,19 @@
 
        <H1> Cadastro de Produto </H1>
 
-     <from>
+     <form action="{{route('produtos.salvar')}}" method="POST">
         @csrf
         
         <div class='mb-3'>
 
-            <label fro='nome' class='form-label' > Nome do Produto:</label>
+            <label for='nome' class='form-label' > Nome do Produto:</label>
             <input type= "text" id="nome" name="nome" class="form-control" required value="{{ old('nome') }}">
 
         </div>
 
-        <div>
+        <div class="mb-3">
             <label class="form-label">Tipode Produto</label>
-
-                <select class="form-select" nome="tipo_id" required  >
+            <select class="form-select" name="tipos_id" required  >
                     <option> - Selecione - </option>
                     @foreach($tipos as $id => $nome)
                     <option value="{{ $id }}">
@@ -33,8 +32,13 @@
                 </select>
 
         </div>
+
+
+      <button class= "btn btn-primary" type= "submit">
+             Salvar
+     </button>
      
-     <from>     
+     <form>     
 
 
 

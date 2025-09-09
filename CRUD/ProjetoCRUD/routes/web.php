@@ -9,3 +9,5 @@ Route::get('/', function () {
 
 
 Route::get('/produtos/criar', [ProdutoController::class, 'criar'])->name('produtos.criar');
+
+Route::post('/produtos/criar', [ProdutoController::class, 'salvar'])->name('produtos.salvar');
