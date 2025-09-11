@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -27,7 +26,7 @@ class ProdutoController extends Controller
          DB::insert("INSERT INTO produto (nome, tipo_id, created_at)
          VALUES(?,?, now())", [$dados['nome'], $dados['tipos_id']]);
 
-         return redirect()->route('produtos.salvar');
+         return redirect()->route('produtos.salvar')->with('ok','Produto criado com sucesso!');
     }
     
 }
