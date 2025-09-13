@@ -228,7 +228,8 @@
                             <h3>Cadastre-se para receber novidades</h3>
                         </div>
                         <div class="card-body">
-                            <form action = "" method = "POST">
+                            <form action = "/musicaController" method = "POST">
+                            @csrf
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label for="nome" class="form-label">Nome Completo</label>
@@ -260,25 +261,25 @@
                                     <div class="row">
                                         <div class="col-md-3">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="rock">
+                                                <input class="form-check-input" type="checkbox" id="rock" name='estilos[]' value='rock'>
                                                 <label class="form-check-label" for="rock">Rock</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="pop">
+                                                <input class="form-check-input" type="checkbox" id="pop" name= 'estilo[]' value='pop'>
                                                 <label class="form-check-label" for="pop">Pop</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="eletronico">
+                                                <input class="form-check-input" type="checkbox" id="eletronico" name= 'estilo[]' value='eletronico'>
                                                 <label class="form-check-label" for="eletronico">Eletrônico</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="mpb">
+                                                <input class="form-check-input" type="checkbox" id="mpb" name= 'estilo[]' value='mpb'>
                                                 <label class="form-check-label" for="mpb">MPB</label>
                                             </div>
                                         </div>

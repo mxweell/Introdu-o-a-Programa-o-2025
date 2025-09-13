@@ -5,6 +5,7 @@ use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\testeController;
 use App\Http\Controllers\musicaController;
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -17,3 +18,6 @@ Route::post('/produtos/criar', [ProdutoController::class, 'salvar'])->name('prod
 Route::get('/testeController', [testeController::class, 'teste'])->name('teste.Controller');
 
 Route::get('/musicaController', [musicaController::class, 'index'])->name('musica.Controller');
+
+
+Route::post('/musicaController', [musicaController::class, 'STORE']);
