@@ -4,9 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\testeController;
 use App\Http\Controllers\musicaController;
+use App\Http\Controllers\FestaController;
 
 
-Route::get('/', function () {
+Route::get('festa', function () {
     return view('welcome');
 });
 
@@ -17,4 +18,6 @@ Route::get('/testeController', [testeController::class, 'teste'])->name('teste.C
 Route::get('/musicaController', [musicaController::class, 'index'])->name('musica.Controller');
 Route::post('/musicaController', [musicaController::class, 'STORE']);
 
-Route::get('/festa',[FestaController::class, 'festa'])->name('festa');
+Route::get('/festa',[FestaController::class, 'index'])->name('festa.show');
+
+Route::get('/login',[FestaController::class, 'login'])->name('login.show');
