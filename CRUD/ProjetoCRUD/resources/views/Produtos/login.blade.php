@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="card">
+                    <div class="card" margin-top: 50px;>
                         <div class="card-header bg-primary text-white text-center">
                             <h3>Cadastre-se para receber novidades</h3>
                         </div>

@@ -34,6 +34,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contato">Contato</a>
                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{route('login.show')}}">Administrador</a>
+                    </li>
                 </ul>
             </div>
         </div>
