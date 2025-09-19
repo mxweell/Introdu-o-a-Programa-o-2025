@@ -5,6 +5,7 @@ use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\testeController;
 use App\Http\Controllers\musicaController;
 use App\Http\Controllers\FestaController;
+use App\Http\Controllers\loginController;   
 
 
 Route::get('festa', function () {
@@ -21,3 +22,5 @@ Route::post('/musicaController', [musicaController::class, 'STORE']);
 Route::get('/festa',[FestaController::class, 'index'])->name('festa.show');
 
 Route::get('/login',[FestaController::class, 'login'])->name('login.show');
+
+Route::get('/Admlogin', [loginController::class, 'showlogin'])->name('adm.login.form');
