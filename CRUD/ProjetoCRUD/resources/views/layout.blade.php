@@ -13,14 +13,14 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-music me-2"></i>MusicFest 2024</a>
+            <a class="navbar-brand" href="{{Route('festa.show')}}"><i class="fas fa-music me-2"></i>MusicFest 2024</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Início</a>
+                        <a class="nav-link" href="{{Route('festa.show')}}">Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#programacao">Programação</a>
@@ -35,7 +35,7 @@
                         <a class="nav-link" href="#contato">Contato</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="{{route('login.show')}}">Administrador</a>
+                        <a class="nav-link" href="{{route('admin.login.form')}}">Administrador</a>
                     </li>
                 </ul>
             </div>

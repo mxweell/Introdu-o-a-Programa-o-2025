@@ -1,5 +1,3 @@
-Adicionar comentário para a turma...
-
 @extends('layout')
 
 @section('title', 'Login Administrativo')
@@ -37,7 +35,7 @@ Adicionar comentário para a turma...
             <button class="btn btn-primary w-100 mb-3">Entrar</button>
             
             <div class="text-center">
-                <a href="{{ route('admin.register.form') }}" class="btn btn-outline-success">
+                <a href="{{route('admin.register.form')}}" class="btn btn-outline-success">
                     Criar nova conta
                 </a>
             </div>
@@ -47,6 +45,5 @@ Adicionar comentário para a turma...
 
 
 @endsection
-login.blade.php
-Exibindo login.blade.php…
+
 

@@ -1,4 +1,4 @@
-@extends ('Produtos.layout')
+@extends ('layout')
 
 @section ('title')
 
