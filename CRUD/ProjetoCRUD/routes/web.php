@@ -16,7 +16,9 @@ Route::get('festa', function () {
 
 Route::get('/produtos/criar', [ProdutoController::class, 'criar'])->name('produtos.criar');
 Route::post('/produtos/criar', [ProdutoController::class, 'salvar'])->name('produtos.salvar');
+
 Route::get('/testeController', [testeController::class, 'teste'])->name('teste.Controller');
+
 Route::get('/musicaController', [musicaController::class, 'index'])->name('musica.Controller');
 Route::post('/musicaController', [musicaController::class, 'STORE']);
 
@@ -34,8 +36,8 @@ Route::get('/admin/registro',[loginController::class, 'register'])->name ('admin
 
 
 Route::middleware(['web'])->group(function () {
-    Route::get('/admin/clientes',[cadastroController::class, 'listaCliente'])->name('admin.clientes');
-    Route::get('/admin/user/create',[loginController::class, 'showCreateUserform'])->name('admin.isers');
-    Route::post('/admin/user',[loginController::class, 'createUser'])->name('admin.users.store');
+Route::get('/admin/clientes',[cadastroController::class, 'listaCliente'])->name('admin.clientes');
+Route::get('/admin/user/create',[loginController::class, 'showCreateUserform'])->name('admin.isers');
+Route::post('/admin/user',[loginController::class, 'createUser'])->name('admin.users.store');
 });
 
