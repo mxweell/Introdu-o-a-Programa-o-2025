@@ -7,6 +7,7 @@ use App\Http\Controllers\musicaController;
 use App\Http\Controllers\FestaController;
 use App\Http\Controllers\loginController;   
 use App\Http\Controllers\cadastroController;
+use App\Http\Controllers\adminController;
 
 
 Route::get('festa', function () {
@@ -31,12 +32,11 @@ Route::get('/login',[FestaController::class, 'login'])->name('login.show');
 Route::get('/Admlogin', [loginController::class, 'showLoginForm'])->name('admin.login.form');
 Route::post('/Admlogin', [loginController::class, 'login'])->name('admin.login');
 Route::post('/Admlogout', [loginController::class, 'logout'])->name('admin.logout');
-Route::get('/admin/registro',[loginController::class, 'register'])->name ('admin.register');
 
 
 
 Route::middleware(['web'])->group(function () {
-Route::get('/admin/clientes',[cadastroController::class, 'listaCliente'])->name('admin.clientes');
+Route::get('/admin/clientes',[cadastroController::class, 'listaCliente'])->name('admin.clientes.');
 Route::get('/admin/user/create',[loginController::class, 'showCreateUserform'])->name('admin.isers');
 Route::post('/admin/user',[loginController::class, 'createUser'])->name('admin.users.store');
 });
